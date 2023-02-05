@@ -39,9 +39,9 @@ class Profile extends StatelessWidget {
           children: [
             CircleAvatar(
               radius: 50,
-              backgroundImage: AssetImage('images/angela.png'),
+              backgroundImage: AssetImage('images/User Image.jpg'),
             ),
-            Text("Angela Yu", style: KAngela),
+            Text("Abdirizak", style: KAngela),
             SizedBoxes(h: 5),
             Text(" Chania, Platanias", style: KAngelaCh),
             SizedBoxes(h: 25),

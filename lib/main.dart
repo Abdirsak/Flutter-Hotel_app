@@ -1,10 +1,13 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-
+import 'package:hotel_app/firebase_options.dart';
+import 'package:hotel_app/screens/Login.dart';
 import 'package:hotel_app/screens/screens.dart';
-
 import 'constants/constis.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const HotelApp());
 }
 
@@ -22,7 +25,7 @@ class HotelApp extends StatelessWidget {
         ),
         scaffoldBackgroundColor: AppColors.kScaffoldBackground,
       ),
-      home: const RouteNavigation(),
+      home: const LoginPage(),
     );
   }
 }

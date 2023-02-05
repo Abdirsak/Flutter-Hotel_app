@@ -24,7 +24,7 @@ class _RoomsState extends State<Rooms> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -83,7 +83,7 @@ class _RoomsState extends State<Rooms> {
               // SizedBoxes(h: 20),
               // Price Container
               Container(
-                height: 160,
+                height: 130,
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
                   color: AppColors.kContainerBackground,
@@ -91,7 +91,7 @@ class _RoomsState extends State<Rooms> {
                 ),
                 child: Padding(
                   padding:
-                      const EdgeInsets.symmetric(horizontal: 25, vertical: 15),
+                      const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
